@@ -11,9 +11,9 @@ const authentication = (req, res, next) => {
     // console.log("Access token >, ", decoded);
     next();
   } else {
-    res.send({
+    res.status(401).json({
       message: "Token not found",
-    });
+  });
   }
 };
 
