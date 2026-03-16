@@ -1,9 +1,9 @@
 {
   "development": {
-    "username": "postgres",
-    "password": "Ultraman2!",
-    "database": "final-project-coursenet", 
-    "host": "127.0.0.1",
+    "username": "postgres.dhizbidkvihgaltilfur",
+    "password": "ignatius_dillwyn",
+    "database": "postgres", 
+    "host": "aws-1-ap-northeast-1.pooler.supabase.com",
     "dialect": "postgres"
   },
   "test": {
