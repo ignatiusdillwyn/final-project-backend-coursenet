@@ -9,7 +9,7 @@ services:
       POSTGRES_PASSWORD: Ultraman2! # ganti dengan password Anda
       POSTGRES_DB: final-project-coursenet   # ganti dengan nama DB Anda
     ports:
-      - "5432:5432"
+      - "5433:5432" #Ini Penting untuk atur portnya
     volumes:
       - postgres_data:/var/lib/postgresql/data
     restart: always
