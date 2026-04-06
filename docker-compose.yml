@@ -1,0 +1,27 @@
+version: "3.9"
+services:
+
+  postgres-db:
+    image: postgres:15
+    container_name: postgres
+    environment:
+      POSTGRES_USER: postgres      # ganti dengan user Anda
+      POSTGRES_PASSWORD: Ultraman2! # ganti dengan password Anda
+      POSTGRES_DB: final-project-coursenet   # ganti dengan nama DB Anda
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    restart: always
+
+  node-application:
+    build: .
+    container_name: final-project-backend-coursenet
+    ports:
+      - "9000:3000"
+    depends_on:
+      - postgres-db
+    restart: always
+
+volumes:
+  postgres_data:

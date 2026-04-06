@@ -3,7 +3,7 @@
     "username": "postgres",
     "password": "Ultraman2!",
     "database": "final-project-coursenet", 
-    "host": "127.0.0.1",
+    "host": "postgres-db",
     "dialect": "postgres"
   },
   "test": {
