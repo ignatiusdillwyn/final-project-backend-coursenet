@@ -65,11 +65,12 @@ class UserController {
 
   static async register(req, res) {
     try {
-      const { email, password } = req.body;
+      const { email, password, username } = req.body;
 
       const user = await User.create({
         email,
         password,
+        username
       });
 
       res.status(201).json({
@@ -100,12 +101,13 @@ class UserController {
         return res.status(401).json({ message: "Wrong password" });
       } else {
         let token = tokenGenerator(user);
-
+        console.log('user ', user)
         res.json({
           status: 200,
           message: "Login success",
           user: {
             id: user.id,
+            username: user.username,
             email: user.email,
             token: token
           },
