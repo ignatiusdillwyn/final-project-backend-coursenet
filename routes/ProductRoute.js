@@ -61,4 +61,11 @@ productRouter.put(
   ProductController.updateProductImage
 );
 
+productRouter.get(
+  "/pin",
+  // authentication,
+  // authorization,
+  ProductController.subscriberPin
+);
+
 module.exports = productRouter;

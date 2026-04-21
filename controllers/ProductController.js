@@ -1,5 +1,6 @@
 const { Product } = require("../models");
 const { Op } = require("sequelize");
+const axios = require("axios");
 
 class ProductController {
     static async getAllProduct(req, res) {
@@ -192,6 +193,22 @@ class ProductController {
                 message: 'Terjadi kesalahan saat mengupdate gambar produk',
                 error: error.message
             });
+        }
+    }
+
+    static async subscriberPin(req, res) {
+        try {
+
+            const response = await axios.get(`https://4k38m.wiremockapi.cloud/subscriber/62819123456/pin`);
+            console.log('Response from external API:', response.data);
+
+            res.status(200).json({
+                status: 200,
+                message: 'Sukses',
+                data: response.data
+            });
+        } catch (error) {
+            res.status(500).json({ message: error.message });
         }
     }
 }

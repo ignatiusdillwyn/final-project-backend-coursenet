@@ -50,6 +50,7 @@ class UserController {
       });
 
       res.status(201).json({
+        status: 201,
         message: "User created successfully",
         user: {
           id: user.id,
@@ -74,6 +75,7 @@ class UserController {
       });
 
       res.status(201).json({
+        status: 201,
         message: "Register success",
         user: {
           id: user.id,
