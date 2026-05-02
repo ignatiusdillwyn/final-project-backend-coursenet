@@ -11,8 +11,9 @@ class ProductController {
                 where: { UserId: userId }
             });
             res.status(201).json({
-                message: "Product created successfully",
-                data: data
+                status: 201,
+                message: "Get all products successfully",
+                products: data
             });
         } catch (error) {
             res.status(500).json({ message: error.message });
@@ -33,6 +34,7 @@ class ProductController {
                 image: ""
             });
             res.status(201).json({
+                status: 201,
                 message: "Product created successfully",
                 data: data
             });
@@ -58,7 +60,12 @@ class ProductController {
             const data = await Product.findByPk(req.params.id);
             if (!data) return res.status(404).json({ message: "Product not found" });
             await data.update(req.body);
-            res.json(data);
+            // res.json(data);
+            res.status(201).json({
+                status: 201,
+                message: "Product updated successfully",
+                data: data
+            });
         } catch (error) {
             res.status(400).json({ message: error.message });
         }
@@ -91,7 +98,10 @@ class ProductController {
                     ],
                 },
             });
-            res.json(data);
+            res.status(201).json({
+                status: 201,
+                products: data
+            });
         } catch (error) {
             res.status(500).json({ message: error.message });
         }
