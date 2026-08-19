@@ -1,0 +1,69 @@
+❌ Gagal konek ke Supabase: ConnectionRefusedError [SequelizeConnectionRefusedError]
+    at Client._connectionCallback (/home/dilt3754/nodevenv/public_html/api-toko-pak-edi.dillwyn.my.id/tokoPakEdi/20/lib/node_modules/sequelize/lib/dialects/postgres/connection-manager.js:133:24)
+    at Client._handleErrorWhileConnecting (/home/dilt3754/nodevenv/public_html/api-toko-pak-edi.dillwyn.my.id/tokoPakEdi/20/lib/node_modules/pg/lib/client.js:408:19)
+    at Client._handleErrorEvent (/home/dilt3754/nodevenv/public_html/api-toko-pak-edi.dillwyn.my.id/tokoPakEdi/20/lib/node_modules/pg/lib/client.js:418:19)
+    at Connection.emit (node:events:524:28)
+    at Socket.reportStreamError (/home/dilt3754/nodevenv/public_html/api-toko-pak-edi.dillwyn.my.id/tokoPakEdi/20/lib/node_modules/pg/lib/connection.js:59:12)
+    at Socket.emit (node:events:524:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  parent: AggregateError [ECONNREFUSED]: 
+      at internalConnectMultiple (node:net:1122:18)
+      at afterConnectMultiple (node:net:1689:7) {
+    code: 'ECONNREFUSED',
+    [errors]: [ [Error], [Error], [Error] ]
+  },
+  original: AggregateError [ECONNREFUSED]: 
+      at internalConnectMultiple (node:net:1122:18)
+      at afterConnectMultiple (node:net:1689:7) {
+    code: 'ECONNREFUSED',
+    [errors]: [ [Error], [Error], [Error] ]
+  }
+}
+❌ Gagal konek ke Supabase: ConnectionRefusedError [SequelizeConnectionRefusedError]
+    at Client._connectionCallback (/home/dilt3754/nodevenv/public_html/api-toko-pak-edi.dillwyn.my.id/tokoPakEdi/20/lib/node_modules/sequelize/lib/dialects/postgres/connection-manager.js:133:24)
+    at Client._handleErrorWhileConnecting (/home/dilt3754/nodevenv/public_html/api-toko-pak-edi.dillwyn.my.id/tokoPakEdi/20/lib/node_modules/pg/lib/client.js:408:19)
+    at Client._handleErrorEvent (/home/dilt3754/nodevenv/public_html/api-toko-pak-edi.dillwyn.my.id/tokoPakEdi/20/lib/node_modules/pg/lib/client.js:418:19)
+    at Connection.emit (node:events:524:28)
+    at Socket.reportStreamError (/home/dilt3754/nodevenv/public_html/api-toko-pak-edi.dillwyn.my.id/tokoPakEdi/20/lib/node_modules/pg/lib/connection.js:59:12)
+    at Socket.emit (node:events:524:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  parent: AggregateError [ECONNREFUSED]: 
+      at internalConnectMultiple (node:net:1122:18)
+      at afterConnectMultiple (node:net:1689:7) {
+    code: 'ECONNREFUSED',
+    [errors]: [ [Error], [Error], [Error] ]
+  },
+  original: AggregateError [ECONNREFUSED]: 
+      at internalConnectMultiple (node:net:1122:18)
+      at afterConnectMultiple (node:net:1689:7) {
+    code: 'ECONNREFUSED',
+    [errors]: [ [Error], [Error], [Error] ]
+  }
+}
+❌ Gagal konek ke Supabase: ConnectionRefusedError [SequelizeConnectionRefusedError]
+    at Client._connectionCallback (/home/dilt3754/nodevenv/public_html/api-toko-pak-edi.dillwyn.my.id/tokoPakEdi/20/lib/node_modules/sequelize/lib/dialects/postgres/connection-manager.js:133:24)
+    at Client._handleErrorWhileConnecting (/home/dilt3754/nodevenv/public_html/api-toko-pak-edi.dillwyn.my.id/tokoPakEdi/20/lib/node_modules/pg/lib/client.js:408:19)
+    at Client._handleErrorEvent (/home/dilt3754/nodevenv/public_html/api-toko-pak-edi.dillwyn.my.id/tokoPakEdi/20/lib/node_modules/pg/lib/client.js:418:19)
+    at Connection.emit (node:events:524:28)
+    at Socket.reportStreamError (/home/dilt3754/nodevenv/public_html/api-toko-pak-edi.dillwyn.my.id/tokoPakEdi/20/lib/node_modules/pg/lib/connection.js:59:12)
+    at Socket.emit (node:events:524:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  parent: AggregateError [ECONNREFUSED]: 
+      at internalConnectMultiple (node:net:1122:18)
+      at afterConnectMultiple (node:net:1689:7) {
+    code: 'ECONNREFUSED',
+    [errors]: [ [Error], [Error], [Error] ]
+  },
+  original: AggregateError [ECONNREFUSED]: 
+      at internalConnectMultiple (node:net:1122:18)
+      at afterConnectMultiple (node:net:1689:7) {
+    code: 'ECONNREFUSED',
+    [errors]: [ [Error], [Error], [Error] ]
+  }
+}
