@@ -88,38 +88,37 @@ class UserController {
   }
 
   static async login(req, res) {
-    return res.json({ message: "Login Success" });
-    // try {
-    //   const { email, password } = req.body;
+    try {
+      const { email, password } = req.body;
 
-    //   const user = await User.findOne({ where: { email } });
+      const user = await User.findOne({ where: { email } });
 
-    //   if (!user) {
-    //     return res.status(401).json({ message: "Wrong email" });
-    //   } 
+      if (!user) {
+        return res.status(401).json({ message: "Wrong email" });
+      } 
       
-    //   let decrtyptPass = decryptPwd(password, user.password);
+      let decrtyptPass = decryptPwd(password, user.password);
 
-    //   if (!decrtyptPass) {
-    //     return res.status(401).json({ message: "Wrong password" });
-    //   } else {
-    //     let token = tokenGenerator(user);
-    //     console.log('user ', user)
-    //     res.json({
-    //       status: 200,
-    //       message: "Login success",
-    //       user: {
-    //         id: user.id,
-    //         username: user.username,
-    //         email: user.email,
-    //         token: token
-    //       },
-    //     });
-    //   }
+      if (!decrtyptPass) {
+        return res.status(401).json({ message: "Wrong password" });
+      } else {
+        let token = tokenGenerator(user);
+        console.log('user ', user)
+        res.json({
+          status: 200,
+          message: "Login success",
+          user: {
+            id: user.id,
+            username: user.username,
+            email: user.email,
+            token: token
+          },
+        });
+      }
 
-    // } catch (error) {
-    //   res.status(500).json({ message: error.message });
-    // }
+    } catch (error) {
+      res.status(500).json({ message: error.message });
+    }
   }
 
   static async edit(req, res) {
