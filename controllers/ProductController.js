@@ -89,12 +89,12 @@ class ProductController {
             const { name } = req.params;
             console.log('search product ', name)
             console.log('userId ', userId)
+
             const data = await Product.findAll({
                 where: {
                     UserId: userId,
                     [Op.or]: [
-                        { name: { [Op.iLike]: `%${name}%` } },
-                        // { email: { [Op.iLike]: `%${name}%` } },
+                        { name: { [Op.substring]: name } } // Case-sensitive
                     ],
                 },
             });
