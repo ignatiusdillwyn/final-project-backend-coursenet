@@ -1,8 +1,8 @@
 {
   "development": {
-    "username": "root",
-    "password": "Ultraman2!",
-    "database": "final-project-coursenet", 
+    "username": "dilt3754_dev-final-project-coursenet",
+    "password": "9~*(o8k&,[RByzLx",
+    "database": "dilt3754_final-project-coursenet", 
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
