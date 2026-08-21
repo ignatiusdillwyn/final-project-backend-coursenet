@@ -3,19 +3,18 @@ const app = express()
 const port = 3000
 const routes = require('./routes')
 
-app.use(express.json()); // ← HARUS ADA ini
-app.use(express.urlencoded({ extended: true })); // ← Untuk form data
+app.use(express.json()); 
+app.use(express.urlencoded({ extended: true })); 
 
 const cors = require('cors');
 
-// Untuk mengizinkan semua origin
-app.use(cors());
-
-// Atau untuk mengizinkan origin tertentu
-// app.use(cors({
-//   origin: 'http://localhost:5173', // Frontend origin
-//   // credentials: true // Jika menggunakan cookies/auth
-// }));
+// --- UBAH BAGIAN INI ---
+// Ganti 'http://localhost:5173' menjadi domain hosting Anda
+// Pastikan Anda menambahkan 'https://' di depannya.
+app.use(cors({
+  origin: 'https://toko-pak-edi.dillwyn.my.id' 
+}));
+// -----------------------
 
 app.use(routes)
 
