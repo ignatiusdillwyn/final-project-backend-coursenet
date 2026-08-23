@@ -8,13 +8,14 @@ app.use(express.urlencoded({ extended: true }));
 
 const cors = require('cors');
 
+app.use(cors()); // Enable CORS for all routes
+
 // --- UBAH BAGIAN INI ---
 // Ganti 'http://localhost:5173' menjadi domain hosting Anda
 // Pastikan Anda menambahkan 'https://' di depannya.
-app.use(cors({
-  origin: 'https://toko-pak-edi.dillwyn.my.id' 
-}));
-// -----------------------
+// app.use(cors({
+//   origin: 'https://toko-pak-edi.dillwyn.my.id' 
+// }));
 
 app.use(routes)
 
