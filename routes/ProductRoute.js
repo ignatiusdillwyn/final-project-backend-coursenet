@@ -61,9 +61,8 @@ productRouter.put(
   ProductController.updateProduct
 );
 productRouter.get(
-  "/details/:id",
-  // authentication,
-
+  "/product-detail/:id",
+  authentication,
   ProductController.getProductById
 );
 productRouter.get(
