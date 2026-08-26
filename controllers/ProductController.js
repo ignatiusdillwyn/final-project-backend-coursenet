@@ -45,10 +45,14 @@ class ProductController {
 
     static async getProductById(req, res) {
         try {
-            let userId = req.userData.id;
-            // const data = await Employee.findByPk(req.params.id);
-            // if (!data) return res.status(404).json({ message: "Employee not found" });
-            // res.json(data);
+            // let userId = req.userData.id;
+            const data = await Product.findByPk(req.params.id);
+            if (!data) return res.status(404).json({ message: "Product not found" });
+            res.status(201).json({
+                status: 201,
+                message: `Get product with id ${req.params.id} successfully`,
+                data: data
+            });
         } catch (error) {
             res.status(500).json({ message: error.message });
         }
