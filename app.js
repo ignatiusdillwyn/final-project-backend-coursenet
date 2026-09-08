@@ -18,6 +18,8 @@ app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
 app.use(routes);
 
+console.log('Server is running on port', port);
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
 });
